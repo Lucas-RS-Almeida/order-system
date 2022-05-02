@@ -12,6 +12,9 @@ Este projeto foi criado com o intuito de aprofundar os conhecimentos em nodeJS, 
 - http requests com Axios
 - Prisma para o acesso ao banco de dados no servidor
 - Socket.io para notificações do pedido em tempo real
+- Nodemailer para receber token de redefinição de senha no e-mail
+- Multer para upload de imagens
+- AWS-S3 para cadastrar imagens dos produtos
 
 ## Scripts
 *Ao entrar nos respectivos diretorios usando o terminal como administrador, rode:
@@ -36,28 +39,34 @@ altere o valor da url de conexão do socket.io
 ## Interface Web
 
 ### Login da Aplicação
-![Captura de tela de 2022-04-27 14-08-08](https://user-images.githubusercontent.com/101877534/166269044-e087b2fc-34f2-4814-b58e-9d8841b4a320.png)
+![tela-login](https://user-images.githubusercontent.com/101877534/166282468-67367aca-0bb5-4371-b410-20ccbddbf750.png)
 
 ### Cadastro da Aplicação
-![Captura de tela de 2022-04-29 17-57-03](https://user-images.githubusercontent.com/101877534/166269236-1810e64a-d1af-4655-b292-8e1f74c9cb9b.png)
+![tela-register](https://user-images.githubusercontent.com/101877534/166283100-a039b3c8-0783-48c7-8d2e-f27c0fc29b01.png)
+
+### Primeiro passo para redefinir senha
+![screen-forgot-password](https://user-images.githubusercontent.com/101877534/166283668-a6f91ed1-8c2c-4f5e-8e6f-d57674497a6e.png)
+
+### Ultimo passo para redefinir senha
+![screen-reset-password](https://user-images.githubusercontent.com/101877534/166285024-ab7b75b5-0f15-4bb6-9ffb-359dfb11c307.png)
 
 ### Home page
-![Captura de tela de 2022-04-29 17-58-54](https://user-images.githubusercontent.com/101877534/166269316-eff98d97-7cfb-4aa0-9861-500963698db7.png)
+![home-page](https://user-images.githubusercontent.com/101877534/166285978-d01ff3d2-bea6-4547-b526-572904f4b9d4.png)
 
 ### Modal de visualização de pedidos
-![Captura de tela de 2022-04-29 17-58-58](https://user-images.githubusercontent.com/101877534/166269427-cf67ac5c-f843-4039-aacf-a40d9b8aebc7.png)
+![modal-order](https://user-images.githubusercontent.com/101877534/166286377-5f9d0074-d399-414f-929b-bf4131054501.png)
 
 ### Página de Categorias cadastradas
-![Captura de tela de 2022-04-29 17-59-04](https://user-images.githubusercontent.com/101877534/166269558-fb11c010-4798-42d6-a251-737afdf4a113.png)
+![screen-categories](https://user-images.githubusercontent.com/101877534/166286836-26ce825f-c507-49b9-838f-53b7861c9e96.png)
 
 ### Modal para cadastrar nova categoria
-![Captura de tela de 2022-04-29 17-59-22](https://user-images.githubusercontent.com/101877534/166269613-ec0dbdd3-ac6c-495d-aa91-079d50ce8431.png)
+![modal-register-category](https://user-images.githubusercontent.com/101877534/166287586-38eb0eca-4b6e-470a-bc2e-338131d92910.png)
 
 ### Página de Produtos cadastrados
-![Captura de tela de 2022-04-29 17-59-10](https://user-images.githubusercontent.com/101877534/166269695-bcc18ddf-f52b-4729-b301-9f3c60024049.png)
+![screen-products](https://user-images.githubusercontent.com/101877534/166287965-ad9aa2c2-3a5e-4be0-a2e4-b95799159ef4.png)
 
 ### Modal para cadastrar novo produto
-![Captura de tela de 2022-04-29 17-59-15](https://user-images.githubusercontent.com/101877534/166269736-f6659cc1-1a01-443e-b8a8-6886c706e5af.png)
+![modal-register-product](https://user-images.githubusercontent.com/101877534/166288479-3b8c1f78-c88a-47ca-a0a0-0e9e3de08776.png)
 
 ## Interface Mobile
 
